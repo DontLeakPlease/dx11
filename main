@@ -30,38 +30,6 @@ local center_screen = vector2_new((screen_size.X / 2), (screen_size.Y / 2))
 
 --<- allowed modify ->--
 
-local _aimsp_settings; _aimsp_settings = {
-
-    -- aimbot settings
-    use_aimbot = true,
-    use_wallcheck = true,
-    team_check = true,
-    loop_all_humanoids = false, -- will allow aimbot to everything that has a humanoid, likely *VERY* laggy
-    max_dist = 9e9, -- 9e9 = very big
-    allow_toggle = {
-        allow = false, -- turning this to false will make the aimbot toggle on right mouse button
-        key = Enum.KeyCode.Z;
-    },
-    prefer = {
-        looking_at_you = false, -- buggy
-        closest_to_center_screen = false, -- stable
-        closest_to_you = true, -- stable
-    },
-    toggle_hud_key = Enum.KeyCode.P,
-    smoothness = 3, -- anything over 5 = aim assist,  1 = lock on (using 1 might get u banned)
-    fov_size = 150; -- 150-450 = preferred
-
-    -- esp settings
-    use_esp = true,
-    esp_toggle_key = Enum.KeyCode.O,
-    rainbow_speed = 2,
-    use_rainbow = true,
-    tracers = true,
-    box = false,
-    name = true,
-    dist = true,
-    health = true; -- might not work on some games
-}
 
 --<- allowed modify ->--
 
